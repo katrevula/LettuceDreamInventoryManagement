@@ -1,0 +1,66 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
+@import url('https://code.jquery.com/jquery-3.2.1.slim.min.js');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js');
+
+header{
+  background-color: #85C440;
+  height: 4em;
+}
+
+*{
+  text-transform: capitalize;
+}
+
+.h3{
+    color: rgb(12, 12, 12);
+}
+footer{
+  background-color: #85C440;
+  height: 4em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.navbar{
+  height: 10%;
+  background-color: #85C440;
+}
+
+button
+{
+  background-color: #85C440;
+}
+
+.PageSwitcher__Item:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
+.PageSwitcher__Item:last-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
+.PageSwitcher{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-align: right;
+  align-items: right; 
+  align-self: right;
+}
+
+.Container-fluid{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
