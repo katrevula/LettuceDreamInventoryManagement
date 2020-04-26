@@ -52,6 +52,8 @@ The project is to develop a user-friendly interface, which will allow the Intern
 
 -Adobe XD
 
+-Java
+
 -HTML, CSS and JavaScript
 
 -React JS
