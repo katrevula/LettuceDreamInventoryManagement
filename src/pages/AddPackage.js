@@ -36,7 +36,7 @@ class AddPackage extends Component{
           })
       }
 
-      // Rendering the UI of the page starts here
+     // Transforming react components into DOM nodes that a browser can understand and display on the screen
     render(){
         const { ptype, weight, count } = this.state;
         return ( 
