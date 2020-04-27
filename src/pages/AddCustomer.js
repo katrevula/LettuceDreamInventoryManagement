@@ -28,7 +28,7 @@ class AddCustomer extends Component{
      
  
     
- // Rendering the UI of the page starts here
+ // Transforming react components into DOM nodes that a browser can understand and display on the screen
     render(){
         const { pname, email, phone, address, zip } = this.state;
         // returning the Ui to be rendered
