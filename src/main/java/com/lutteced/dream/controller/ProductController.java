@@ -34,7 +34,7 @@ public class ProductController {
 	// This annotation informs the container for automatic dependency management by type
 	@Autowired
 	private ProductService service;
-
+	// This annotation map the request comes with /product/add to the addProduct() method
 	@PostMapping("/add")
 	public ResponseEntity<Response> addProduct(@Valid @RequestBody ProductDto product) {
 		log.info("request came for adding product with details : " + product.toString());
