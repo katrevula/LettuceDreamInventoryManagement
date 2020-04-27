@@ -20,7 +20,9 @@ import com.lutteced.dream.model.Product;
 import com.lutteced.dream.service.ProductService;
 
 import lombok.extern.slf4j.Slf4j;
-
+// This annotation denotes that this class is a RestController class.
+// If we write this annotation on the top of class then it is optional to write any stereotype 
+// annotation explicitly to tell that this class is a spring bean.
 @RestController
 @RequestMapping("/product")
 @Slf4j
