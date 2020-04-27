@@ -31,6 +31,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ProductController {
 
+	// This annotation informs the container for automatic dependency management by type
 	@Autowired
 	private ProductService service;
 
