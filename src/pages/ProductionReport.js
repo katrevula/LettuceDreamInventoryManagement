@@ -28,7 +28,7 @@ class ProductionReport extends Component{
         console.log(this.state);
       };
 
-    // Rendering the UI of the page starts here
+    // Transforming react components into DOM nodes that a browser can understand and display on the screen
     render(){
         const { bayid, bname } = this.state;
         // returning the Ui to be rendered
