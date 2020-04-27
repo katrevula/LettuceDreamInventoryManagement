@@ -24,6 +24,9 @@ import lombok.extern.slf4j.Slf4j;
 // If we write this annotation on the top of class then it is optional to write any stereotype 
 // annotation explicitly to tell that this class is a spring bean.
 @RestController
+
+// This annotation is class level annotation and it is mapping /product URL to the class. 
+// Whenever request comes with /product then this class this class gets called.
 @RequestMapping("/product")
 @Slf4j
 public class ProductController {
