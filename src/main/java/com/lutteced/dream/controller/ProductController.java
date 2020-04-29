@@ -48,6 +48,8 @@ public class ProductController {
 			return new ResponseEntity<Response>(Response.ok(result, "Product details added successfully"),
 					HttpStatus.OK);
 		} catch (DataBaseException e) {
+			// Created a new Response object and returned the response with error msg
+			
 			return new ResponseEntity<Response>(Response.serverError("", "Server error,Please try later"),
 					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
