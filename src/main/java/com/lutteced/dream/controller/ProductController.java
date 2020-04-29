@@ -89,7 +89,7 @@ public class ProductController {
 					HttpStatus.NOT_FOUND);
 		} 
 	}
-
+	// This annotation map the request comes with /product/get-product/{productId}} to the getAllProduct() method
 	@GetMapping("/view-product")
 	public ResponseEntity<Response> getAllProduct() {
 		try {
