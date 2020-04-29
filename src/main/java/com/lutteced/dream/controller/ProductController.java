@@ -44,6 +44,7 @@ public class ProductController {
 			// calling the addProduct() method of service bean and storing the result
 		// in product Model object called result.
 			Product result = service.addProduct(product);
+			// Created a new Response object and returned the response
 			return new ResponseEntity<Response>(Response.ok(result, "Product details added successfully"),
 					HttpStatus.OK);
 		} catch (DataBaseException e) {
