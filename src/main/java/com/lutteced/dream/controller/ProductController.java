@@ -49,7 +49,7 @@ public class ProductController {
 					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
-
+	// The request for update in product
 	@PostMapping("/update/{productId}")
 	public ResponseEntity<Response> updateProductbyId(@Valid @PathVariable(value = "productId") Long productId,
 			@Valid @RequestBody ProductDto product) {
