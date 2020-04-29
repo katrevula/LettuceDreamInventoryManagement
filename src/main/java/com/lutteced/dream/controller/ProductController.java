@@ -39,7 +39,7 @@ public class ProductController {
 	// adding the validation
 	public ResponseEntity<Response> addProduct(@Valid @RequestBody ProductDto product) {
 		log.info("request came for adding product with details : " + product.toString());
-
+		// Adding try catch for exception handeling
 		try {
 			Product result = service.addProduct(product);
 			return new ResponseEntity<Response>(Response.ok(result, "Product details added successfully"),
