@@ -41,6 +41,8 @@ public class ProductController {
 		log.info("request came for adding product with details : " + product.toString());
 		// Adding try catch for exception handeling
 		try {
+			// calling the addProduct() method of service bean and storing the result
+		// in product Model object called result.
 			Product result = service.addProduct(product);
 			return new ResponseEntity<Response>(Response.ok(result, "Product details added successfully"),
 					HttpStatus.OK);
