@@ -72,6 +72,8 @@ public class ProductController {
 	@GetMapping("/get-product/{productId}")
 	public ResponseEntity<Response> getProductById(@PathVariable(value = "productId") Long productId) {
 		try {
+			// calling the updateProductById() method of service bean and storing the result
+		// in product Model object called result.
 			Product result = service.getProductById(productId);
 			return new ResponseEntity<Response>(Response.ok(result, "Product details"),
 					HttpStatus.OK);
