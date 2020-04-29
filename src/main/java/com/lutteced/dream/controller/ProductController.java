@@ -75,6 +75,13 @@ public class ProductController {
 			// calling the updateProductById() method of service bean and storing the result
 		// in product Model object called result.
 			Product result = service.getProductById(productId);
+			        // Created a new Response object
+				// Set the response message if product update successfully
+				// Set the response message if product update successfully
+				// Set the response message if product update successfully
+				// set the result
+				// send the response back
+		return response;
 			return new ResponseEntity<Response>(Response.ok(result, "Product details"),
 					HttpStatus.OK);
 		} catch (ResourceNotFoundException e) {
