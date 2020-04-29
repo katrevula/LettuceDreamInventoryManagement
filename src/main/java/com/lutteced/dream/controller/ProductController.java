@@ -36,6 +36,7 @@ public class ProductController {
 	private ProductService service;
 	// This annotation map the request comes with /product/add to the addProduct() method
 	@PostMapping("/add")
+	// adding the validation
 	public ResponseEntity<Response> addProduct(@Valid @RequestBody ProductDto product) {
 		log.info("request came for adding product with details : " + product.toString());
 
