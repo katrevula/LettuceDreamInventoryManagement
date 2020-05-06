@@ -1,5 +1,5 @@
 # How to Use Maven
-Maven
+## Maven
 1. It is a build tool, which automates build process of a java project. 			  
 2. Build process is creating from a directory structure to making a project as a deployable      artifact like a .jar or war or ear file.
 3. Maven follows convention over configuration. It means if a project follows, maven provided     directory structure then it needs very less configuration.
@@ -7,7 +7,7 @@ Maven
 5. Download Maven zip file from www.eu.apache.org/dist.maven.maven-3/3.5.3/binaries/
 6. Extract the downloaded zip file then apache-maven-3.5.3 directory would be created.
 
-Maven Environment settings
+## Maven Environment settings
 
 1. Create JAVA_HOME
 		NAME: JAVA_HOME
@@ -22,23 +22,25 @@ Maven Environment settings
 	          VALUE: f:\APACHE-MAVEN-3.5.2\bin
 
 4. Add maven to path
-Note: - to verify the settings
-Open command prompt and type the command mvn –version
+### Note: - to verify the settings
 
-Maven Archetype
+## Open command prompt and type the command mvn –version
+
+## Maven Archetype
+
 1. Maven Archetypes are templates for creating similar type of projects.
 2. An Archetype automatically creates a directory structure of maven
 3. Choose Maven archetype Maven-archetype-quickStart for creating Standalone java projects.
 4. For Web-Development choose Maven-archetype-webapp or webapp-jee5.
 
-Project Co-ordinates
+## Project Co-ordinates
 1. groupId    --------> It is organization/company Id.
 2. artifactId --------> It is name of the project
 3. Version.  --------> Version of the project SNAPSHOT-----> project is under process
 						RELEASE-----> Project is completed.
 
-POM.xml
-	* pom--------> Project object Model
+## POM.xml (pom--------> Project object Model)
+	* 
 1. It is a main file of a maven project.
 2. It is use to configure dependencies and plugins
 3. Maven downloads dependencies and plugins from central repository and stores them in local    repository.
@@ -52,7 +54,8 @@ POM.xml
         </dependency> 
 </dependencies>		
 
-MAVEN GOALS
+## MAVEN GOALS
+
 1. File Menu ----> New  ----> Project... ----> open Maven----> Select Maven Project ---->Next    ---->next  ---->Select Maven-archetype-quickstart ----> Next ----> enter groupId as  com.LettuceDream ----> artifactId as maven-spring-app ----> Enter package as com.LettuceDream.bean ---->Finish.
 
 2. Open pom.xml and do the following changes
@@ -79,6 +82,7 @@ MAVEN GOALS
 	}
 
 Step 4: Open Src---->Rightclick new New folder Enter folder name as resources----> Finish
+
 Step 5 Rightclick resources new ----> file----> Enter filename applicationcontext.xml---->finish
 	<bean id = "test" class ="com.LettuceDream.bean.Test">
 		<property name = "test" ref = "date"/>
@@ -105,7 +109,9 @@ ApplicationContext ctx = new ClassPathXmlApplicationContext ("Application-Contex
  }
 
 8. RightClick on Project---->Run as Maven build...---->Enter package in goals----> Run
+
 9. RightClick on Test.java---->Run as ---->java application 
+
   ***Local repository of maven : C:\Users\intel\.m2\repository
    C:\Users\intel\.m2\repository\org\springframework\spring-context\4.2.5.RELEASE
 
